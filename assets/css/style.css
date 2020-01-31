@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Font Awesome 5';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), 
+	   url("../webfonts/fa-solid-900.woff2") format("woff2"), 
+	   url("../webfonts/fa-solid-900.woff") format("woff"), 
+	   url("../webfonts/fa-solid-900.ttf") format("truetype"), 
+	   url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); 
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0;
+	margin: 0;
+}
+a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:hover, button:focus{
+	outline: none;
+	text-decoration: none;
+}
+a{
+	transition: 0.2s ease all;
+}
+.preload-screen{
+	position: fixed;
+	background: #c4cdd6;
+	height: 100vh;
+	width: 100%;
+	z-index: 30;
+}
+.preload-screen .pleload-screen__btn{
+	display: block;
+	width: 250px;
+	font-family: 'Open Sans', sans-serif;
+	height: 45px;
+	font-size: 16px;
+	color: #fff;
+	background: #ff891e;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 3px;
+}
+.preload-screen .pleload-screen__btn:hover{
+	color: #ff891e;
+	background: #c4cdd6;
+	border: 2px solid #ff891e;
+}
+#carouselExampleIndicators{
+	height: 675px;
+}
+#carouselExampleIndicators .carousel-item img{
+	object-fit: cover;
+}
+#carouselExampleIndicators .carousel-caption{
+	color: #000;
+	text-align: left;
+	height: 100%;
+	margin-bottom: -20px;	
+}
+#carouselExampleIndicators .carousel-caption h2{
+	font-size: 42px;
+	margin-bottom: 11px;
+    font-weight: 400;
+    cursor: default;
+    margin-top: -6px;
+	width: 564px;
+}
+#carouselExampleIndicators .carousel-caption p{
+	font-size: 26px;
+	margin-bottom: 21px;
+	cursor: default;
+	letter-spacing: -0.001em;
+}
+#carouselExampleIndicators .carousel-caption .carousel-caption-btns a{
+	width: 153px;
+	height: 45px;
+	border: 1px solid #000;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 16px;
+	border-radius: 3px;
+	margin-right: 22px;
+	cursor: pointer;
+	letter-spacing: 0.002em;
+}
+#carouselExampleIndicators .carousel-caption .carousel-caption-btns a.carousel-caption-btns-orange{
+	color: #fff;
+	background: #ff891e;
+	border: none;
+}
+#carouselExampleIndicators .carousel-control-prev,
+#carouselExampleIndicators .carousel-control-next{
+	width: 75px;
+}
+#carouselExampleIndicators .carousel-control-prev .carousel-control-background,
+#carouselExampleIndicators .carousel-control-next .carousel-control-background{
+	height: 85px;
+	background: #000;
+	width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    border-radius: 3px;
+}
+#carouselExampleIndicators .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next-icon{
+	background-image: none;
+	width: 36px;
+    height: 44px;
+}
+#carouselExampleIndicators .carousel-control-prev-icon::before{
+    font-family:"Font Awesome 5";
+    font-weight:300;
+    content:"\f104";
+    font-size: 30px;
+}
+#carouselExampleIndicators .carousel-control-next-icon::before{
+    font-family:"Font Awesome 5";
+    font-weight:300;
+    content:"\f105";
+    font-size: 30px;
+}
+#carouselExampleIndicators .carousel-indicators{
+	margin: 0;
+	margin-bottom: 19px;
+}
+#carouselExampleIndicators .carousel-indicators li{
+	width: 275px;
+	height: 65px;
+	border-radius: 3px;
+	text-indent: 0;
+	opacity: 1;
+	margin-left: 0;
+	margin-right: 14px;
+	margin-bottom: -8px;
+	background-color: transparent;
+}
+#carouselExampleIndicators .carousel-indicators li:last-child{
+	margin-right: 0;
+}
+#carouselExampleIndicators .carousel-indicators .active{
+	background-color: transparent;
+}
+#carouselExampleIndicators .mini-card{
+	position: relative;
+    color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 6px;
+	background-color: rgba(0, 0, 0, 0.15);
+	border-radius: 3px;
+}
+#carouselExampleIndicators .carousel-indicators .active .mini-card{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#carouselExampleIndicators .mini-card  img{
+	height: 54px;
+	width: 48px;
+	display: block;
+	border-radius: 3px;
+	margin-right: 10px;
+	z-index: 1;
+}
+#carouselExampleIndicators .mini-card-caption p{
+	font-size: 11px;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	margin-top: 2px;
+}
+#carouselExampleIndicators .mini-card-caption h3{
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.09em;
+	line-height: 1.2em;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1451px){
+	#carouselExampleIndicators .carousel-caption h2{
+		font-size: 35px;
+		margin-bottom: 8px;
+	}
+	#carouselExampleIndicators .carousel-caption p{
+		font-size: 22px;
+	}
+	#carouselExampleIndicators .carousel-caption p{
+		margin-bottom: 16px;
+	}
+	#carouselExampleIndicators .carousel-caption .carousel-caption-btns a{
+		width: 128px;
+		height: 37px;
+		margin-bottom: 8px;
+		margin-right: 19px;
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 1260px){
+	#carouselExampleIndicators .carousel-indicators li:last-child{
+		margin-right: 0;
+		
+	}
+	#carouselExampleIndicators .mini-card-caption h3{
+		font-size: 11px;
+	}
+	#carouselExampleIndicators .carousel-caption{
+		margin-bottom: -8px;
+		margin-right: -97px;
+	}
+	#carouselExampleIndicators .carousel-indicators li {
+		width: 224px;
+		height: 55px;
+	}
+	#carouselExampleIndicators .mini-card img {
+		height: 46px;
+		width: 39px;
+		margin-right: 6px;
+	}
+	#carouselExampleIndicators .mini-card-caption p{
+		letter-spacing: -0.06em;
+		margin-top: 1px;
+	}
+	#carouselExampleIndicators .mini-card-caption h3{
+		margin-top: -2px;
+		letter-spacing: 0.04em;
+		line-height: 1.1em;
+	}
+	#carouselExampleIndicators .carousel-indicators {
+		margin-bottom: 21px;
+	}
+}
+
+
+@media screen and (max-width: 992px) {
+	#carouselExampleIndicators .carousel-caption h2{
+		font-size: 25px;
+		text-align: center;
+		width: 82%;
+		margin: 0 auto 3px;
+	}
+	#carouselExampleIndicators .carousel-caption p{
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 22px;
+	}
+	#carouselExampleIndicators .carousel-caption .carousel-caption-btns a.carousel-caption-btns-orange{
+		margin: 0 auto;
+	}
+	#carouselExampleIndicators .carousel-indicators li{
+		width: 12px;
+		height: 12px;
+		margin-right: 14px;
+		border: 1px solid #282828;
+		border-radius: 50%;
+		background-clip: border-box;
+	}
+	
+	#carouselExampleIndicators .carousel-indicators .active{
+		background-color: #282828;
+	}
+	#carouselExampleIndicators{
+		height: 380px;
+	}
+	#carouselExampleIndicators .carousel-caption{
+		margin: 0;
+	}
+	#carouselExampleIndicators .carousel-indicators {
+		margin-bottom: 22px;
+	}
+}
+
